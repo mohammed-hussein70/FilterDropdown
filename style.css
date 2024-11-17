@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.dropDown {
+  width: fit-content;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.dropDown .dropdown-content {
+  display: none;
+}
+.dropDown .dropBtn {
+  width: 150px;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #04aa6d;
+  border: none;
+  outline: none;
+  &:hover {
+    background-color: #3e8e41;
+  }
+}
+.dropDown .search {
+  width: 150px;
+  padding: 10px 10px 10px 25px;
+  background-image: url("searchIcon.png");
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 5px center;
+  border: 1px solid #ccc;
+  outline: none;
+}
+.dropDown a {
+  display: block;
+  text-decoration: none;
+  padding: 10px;
+  background-color: #ccc;
+  color: black;
+  transition: 0.3s;
+  font-size: 17px;
+  &:hover {
+    background-color: #ddd;
+    padding-left: 20px;
+  }
+}
+.dropDown a:not(:last-child) {
+  border-bottom: 1px solid #aaa;
+}
